@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oriyan DJ | The Ultimate Experience</title>
+    <meta name="description" content="Experience the ultimate DJ performance with Oriyan DJ. Book for events, clubs, and private parties.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="antialiased min-h-screen flex flex-col relative">
+
+    <!-- Background glowing orbs -->
+    <div class="fixed top-0 left-0 w-full h-full overflow-hidden -z-10 pointer-events-none">
+        <div class="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] rounded-full bg-purple-600/20 blur-[120px]"></div>
+        <div class="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] rounded-full bg-cyan-600/20 blur-[120px]"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass border-b-0 py-4 transition-all duration-300" id="navbar">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold tracking-tighter text-glow flex items-center gap-2">
+                <i class="fa-solid fa-compact-disc animate-spin-slow text-purple-400"></i>
+                ORIYAN<span class="text-cyan-400 font-light">DJ</span>
+            </a>
+            
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="index.html" class="text-purple-400 font-semibold hover:text-purple-300 transition-colors">Home</a>
+                <a href="about.html" class="text-gray-300 hover:text-white transition-colors">About</a>
+                <a href="services.html" class="text-gray-300 hover:text-white transition-colors">Services</a>
+                <a href="contact.html" class="btn-neon text-sm py-2 px-6">Book Now</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button class="md:hidden text-2xl text-white focus:outline-none" id="mobile-menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+        
+        <!-- Mobile Dropdown -->
+        <div class="md:hidden hidden absolute top-full left-0 w-full glass flex flex-col items-center py-4 space-y-4" id="mobile-menu">
+            <a href="index.html" class="text-purple-400 font-semibold">Home</a>
+            <a href="about.html" class="text-gray-300 hover:text-white">About</a>
+            <a href="services.html" class="text-gray-300 hover:text-white">Services</a>
+            <a href="contact.html" class="btn-neon text-sm py-2 px-6 mt-2">Book Now</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <main class="flex-grow flex items-center justify-center pt-24 pb-12 px-4 md:px-0">
+        <div class="container mx-auto grid md:grid-cols-2 gap-12 items-center">
+            
+            <!-- Hero Text -->
+            <div class="space-y-8 z-10 text-center md:text-left">
+                <div class="inline-block px-4 py-1 rounded-full glass text-sm font-semibold tracking-wide text-cyan-300 mb-4 border-cyan-500/30">
+                    <i class="fa-solid fa-fire mr-2"></i> The Party Starts Here
+                </div>
+                
+                <h1 class="text-5xl md:text-7xl font-black leading-tight">
+                    FEEL THE <br />
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400 text-glow">BASS</span> DELIVER <br />
+                    THE VIBE.
+                </h1>
+                
+                <p class="text-gray-400 text-lg md:text-xl max-w-lg mx-auto md:mx-0 font-light">
+                    Elevating events with electrifying beats, seamless mixing, and an unforgettable atmosphere. Ready to make your night legendary?
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start pt-4">
+                    <a href="services.html" class="btn-neon pulse-glow text-center">
+                        <i class="fa-solid fa-headphones mr-2"></i> Listen Now
+                    </a>
+                    <a href="contact.html" class="btn-neon btn-neon-cyan text-center">
+                        <i class="fa-regular fa-calendar-check mr-2"></i> Book Event
+                    </a>
+                </div>
+                
+                <!-- Socials -->
+                <div class="pt-8 flex gap-6 justify-center md:justify-start text-gray-400">
+                    <a href="#" class="hover:text-white hover:scale-110 transition-transform text-2xl"><i class="fa-brands fa-soundcloud"></i></a>
+                    <a href="#" class="hover:text-purple-400 hover:scale-110 transition-transform text-2xl"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="hover:text-cyan-400 hover:scale-110 transition-transform text-2xl"><i class="fa-brands fa-spotify"></i></a>
+                    <a href="#" class="hover:text-red-500 hover:scale-110 transition-transform text-2xl"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <!-- Hero Image -->
+            <div class="relative w-full aspect-square md:aspect-[4/5] rounded-2xl overflow-hidden glass border-purple-500/20 shadow-2xl shadow-purple-500/20 animate-float">
+                <!-- Using the generated artifact image path -->
+                <img src="C:\Users\Pavithra\Desktop\oriyan.jpg" alt="Oriyan DJ performing live" class="object-cover w-full h-full opacity-90 hover:opacity-100 transition-opacity duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+            </div>
+            
+        </div>
+    </main>
+
+    <!-- Quick Stats/Features -->
+    <section class="py-12 relative z-10 glass border-y-white/5 bg-black/40">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div class="p-4">
+                    <h3 class="text-4xl font-bold text-white mb-2">500+</h3>
+                    <p class="text-purple-400 text-sm tracking-wider uppercase">Events Rocked</p>
+                </div>
+                <div class="p-4">
+                    <h3 class="text-4xl font-bold text-white mb-2">10k+</h3>
+                    <p class="text-cyan-400 text-sm tracking-wider uppercase">Happy Dancers</p>
+                </div>
+                <div class="p-4">
+                    <h3 class="text-4xl font-bold text-white mb-2">10</h3>
+                    <p class="text-purple-400 text-sm tracking-wider uppercase">Years Exp.</p>
+                </div>
+                <div class="p-4">
+                    <h3 class="text-4xl font-bold text-white mb-2">50+</h3>
+                    <p class="text-cyan-400 text-sm tracking-wider uppercase">Original Mixes</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="glass border-t-white/5 py-8 mt-auto z-10">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-gray-500 text-sm">&copy; 2026 Oriyan DJ. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                nav.classList.add('bg-black/80', 'backdrop-blur-md', 'border-b', 'border-white/10');
+            } else {
+                nav.classList.remove('bg-black/80', 'backdrop-blur-md', 'border-b', 'border-white/10');
+            }
+        });
+    </script>
+</body>
+</html>
